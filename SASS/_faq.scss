@@ -1,0 +1,66 @@
+.container-faq {
+  display: block;
+  border: 10px outset $g;
+  margin: 0 auto;
+}
+.faq {
+  font-family: $hfontp;
+  text-align: center;
+  font-size: 4rem;
+  color: $p;
+  margin-top: 5vw;
+}
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 25px;
+  width: 100%;
+  border: 3px double $y;
+  text-align: left;
+  outline: none;
+  transition: 0.4s;
+  font-family: $hfontp;
+  font-size: 2rem;
+  height: 20vh;
+  margin-left: 0;
+}
+
+.active,
+.accordion:hover {
+  background-image: linear-gradient(to right, $g, $p);
+}
+
+.accordion:after {
+  content: "\002B";
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  font-size: 1.2rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+@media (max-width: 700px) {
+  .accordion {
+    font-size: 1rem;
+    word-wrap: break-word;
+  }
+}
+/* @media(min-width:700px){
+  .container-faq{
+margin-left: 20vw;
+margin-right: 20vw;
+  }
+
+
+
+  } */

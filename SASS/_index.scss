@@ -1,0 +1,72 @@
+body {
+  background-image: linear-gradient(
+    to right,
+    #f1f159,
+    rgba(237, 146, 237, 0.992)
+  );
+}
+
+#mardi {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-basis: 100px;
+
+  width: 80vw;
+  gap: 30px;
+  font-family: $pfont;
+  text-align: justify;
+  top: 10px;
+}
+.box1,
+.box2,
+.box3 {
+  box-shadow: 5px 5px $y;
+  border-radius: 10px;
+  background-color: #9453a6;
+  padding: 10px 10px 10px 10px;
+  font-size: 25px;
+}
+
+.box,
+h3 {
+  font-family: $hfont;
+  color: $g;
+}
+.imgcard {
+  object-fit: cover;
+  height: 50vh;
+}
+h5{
+  font-family:$hfont;
+font-size: 1.5rem;
+  
+
+}
+.card-text{
+  font-family: $hfontp;
+  font-size: 1.1rem;
+}
+
+.carousel-item img {
+    height: 35vw;
+}
+h10{
+color: $w;
+font-family: $hfont;
+font-size: 4rem;
+}
+.img-mobail {
+    display: none;
+}
+
+@media(max-width:600px) {
+    .carousel {
+        display: none;
+
+    }
+
+    .img-mobail {
+        display: block;
+    }
+
+}

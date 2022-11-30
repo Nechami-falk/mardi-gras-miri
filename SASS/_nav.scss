@@ -1,0 +1,28 @@
+.container-fluid {
+  background-color: $g;
+}
+#navbarSupportedContent {
+  margin-left: 400px;
+}
+img {
+  width: 150px;
+  height: 150px;
+}
+nav {
+  font-family: $hfont;
+
+  font-size: 4rem;
+}
+.nav-item {
+  margin: 0 auto;
+  display: block;
+}
+.nav-link {
+  color: $p;
+  text-align: center;
+  font-family: $hfont;
+}
+ul {
+  display: flex;
+  flex-direction: column;
+}
